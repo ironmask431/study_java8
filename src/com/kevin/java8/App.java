@@ -20,7 +20,7 @@ public class App {
         Date date = new Date();
         long time = date.getTime(); //Date 인데 시간까지 표시된다고? 이상하다.
         System.out.println("time="+time); //time = 1653661235206
-        // 표시되는 시간도 이상하게보임. 1970년을 기준으로 지난 밀리세컨드 표시
+        // 표시되는 시간도 이상하게보임. 1900년을 기준으로 지난 밀리세컨드 표시
         System.out.println("date="+date); // Fri May 27 23:22:38 KST 2022
 
 
