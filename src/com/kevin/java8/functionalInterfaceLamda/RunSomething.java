@@ -1,4 +1,4 @@
-package com.kevin.java8;
+package com.kevin.java8.functionalInterfaceLamda;
 
 //함수형인터페이스 일경우 어노테이션 명시
 @FunctionalInterface
