@@ -9,14 +9,14 @@ import java.util.function.UnaryOperator;
 /**
  * 강의 2 - 함수형 인터페이스와 람다 = 4.메소드 레퍼런스
  */
-public class App {
+public class MethodReference {
     public static void main(String[] args) {
         //UnaryOperator = Function 함수형 인터페이스중 입력,리턴이 같은 타입일때 하나의 타입만 명시해서 사용가능
         UnaryOperator<String> hi1 = (s) -> "hi "+s;
         //위 함수인터페이스는 Greeting.hi() 와 같은 기능
         System.out.println(hi1.apply("test"));
 
-        //아래와 같이 변경 가능  :: 는 메소드레퍼런스를 뜻함. 함수형인터페이스의 구현체로 Greeting.hi()
+        //아래와 같이 변경 가능  :: 는 메소드레퍼런스를 뜻함. 함수형인터페이스의 구현체로 Greeting.hi()를 사용
         //스태틱 메소드를 사용
         UnaryOperator<String> hi2 = Greeting::hi;
         System.out.println(hi2.apply("test"));

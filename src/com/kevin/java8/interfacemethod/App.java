@@ -5,14 +5,12 @@ public class App {
         Foo foo = new DefaultFoo("leesh");
 
         //구현클래스의 Overriding 된 메소드 사용
-        foo.printName();
+        foo.printName(); //name
 
         //인터페이스의 디폴트 메소드 사용
-        foo.printNameUpperCase();
+        foo.printNameUpperCase(); //LEESH
 
         //인터페이스의 스태틱 메소드 사용
-        Foo.printAnything();
-
-
+        Foo.printAnything(); // Anything
     }
 }

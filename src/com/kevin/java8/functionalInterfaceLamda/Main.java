@@ -21,18 +21,20 @@ public class Main {
 
     public static void main(String[] args) {
         // 익명 내부 클래스(함수형 인터페이스) 원형
-//        RunSomething runSomething = new RunSomething() {
-//            @Override
-//            public void doIt(){
-//                System.out.println("Hello");
-//            }
-//        };
+        RunSomething runSomething = new RunSomething() {
+            @Override
+            public void doIt(){
+                System.out.println("Hello");
+            }
+        };
+        runSomething.doIt();
+
         // 익명 내부 클래스(함수형 인터페이스) > 인텔리제이에서 람다식으로 변경지원
-        RunSomething runSomething = () -> {
+        RunSomething runSomething2 = () -> {
             System.out.println("Hello");
             System.out.println("Hello2");
         };
-        runSomething.doIt();
+        runSomething2.doIt();
 
         /**
          * java8에서 기본제공하는 주요 함수형 인터페이스
