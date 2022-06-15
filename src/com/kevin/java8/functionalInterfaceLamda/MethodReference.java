@@ -16,7 +16,8 @@ public class MethodReference {
         //위 함수인터페이스는 Greeting.hi() 와 같은 기능
         System.out.println(hi1.apply("test"));
 
-        //아래와 같이 변경 가능  :: 는 메소드레퍼런스를 뜻함. 함수형인터페이스의 구현체로 Greeting.hi()를 사용
+        //아래와 같이 변경 가능  :: 는 메소드레퍼런스를 뜻함. 함수형인터페이스의 구현체로
+        //특정 클래스의 메소드를 사용하고자 할때 "클래스명(인스턴스명)::메소드명" 이렇게 사용할 수 있다.
         //스태틱 메소드를 사용
         UnaryOperator<String> hi2 = Greeting::hi;
         System.out.println(hi2.apply("test"));
