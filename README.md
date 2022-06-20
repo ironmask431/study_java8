@@ -1,3 +1,3 @@
 # study_java8
 
-목적 : JAVA8 STUDY PROJECT
+목적 : java8 study
