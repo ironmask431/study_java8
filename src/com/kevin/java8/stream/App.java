@@ -22,16 +22,31 @@ public class App {
             return s.toUpperCase();
         }); // 이상태에서는 출력이 실행되지 않음. 종료형 오퍼레이터가 오지 않았기때문에.
 
-        System.out.println("-----");
+        System.out.println("-----1");
 
         names.stream().map(s -> {
             System.out.println(s);
             return s.toUpperCase(); //stream 은 실제 데이터를 바꾸진 않는다.
         }).collect(Collectors.toList()); //실제로 출력이 됨.
 
-        System.out.println("-----");
+//        chawon
+//        jinsol
+//        yena
+//        naeun
+//        rachel
+//        chakyung
+
+        System.out.println("-----2");
 
         names.forEach(System.out::println); //변경없이 그대로 출력됨을 확인함
+
+//        chawon
+//        jinsol
+//        yena
+//        naeun
+//        rachel
+//        chakyung
+
 
         //중개형 오퍼레이터
         //중개형 오퍼레이터는 0개 또는 여러개가능.
@@ -42,7 +57,7 @@ public class App {
         //반드시 1개가 있어야됨.
         //.collect() 등, count, forEach, min, max, allMatch...
 
-        System.out.println("-----");
+        System.out.println("-----3");
 
         //기존 병렬처리
         for(String name : names){
@@ -52,12 +67,22 @@ public class App {
             //여러가지 추가 조건이 들어갈수록 복잡해짐.
         }
 
-        System.out.println("-----");
+//        CHAWON
+//        CHAKYUNG
+
+        System.out.println("-----4");
 
         //stream 사용하여 병렬처리
         List<String> collect = names.parallelStream().map(String::toUpperCase)
                 .collect(Collectors.toList());
         collect.forEach(System.out::println);
+
+//        CHAWON
+//        JINSOL
+//        YENA
+//        NAEUN
+//        RACHEL
+//        CHAKYUNG
 
         //stream() : 같은스레드에서 순차적으로 처리가됨.
         //parallelStream() : 여러 스레드에서 동시진행. 그러나 무조건 빨라지는건 아니다. 여러 스레드들을 만들때도 리소스가 들기때문.
