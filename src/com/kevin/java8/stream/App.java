@@ -48,12 +48,12 @@ public class App {
 //        chakyung
 
 
-        //중개형 오퍼레이터
+        //중개형 오퍼레이터 - stream 을 리턴함. **
         //중개형 오퍼레이터는 0개 또는 여러개가능.
         //중개형 오퍼레이터는 종료형 오퍼레이터가 오기전에는 실행되지 않음. (정의만 함)
         //.map() , filter, limit, skip, sorted ...
 
-        //종료형 오퍼레이터
+        //종료형 오퍼레이터 - stream 을 리턴하지 않음 **
         //반드시 1개가 있어야됨.
         //.collect() 등, count, forEach, min, max, allMatch...
 
