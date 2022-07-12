@@ -53,7 +53,7 @@ public class App2 {
         System.out.println("3. 수업 이름만 모아서 스트림 만들기");
         //to do
         springClasses.stream()
-                        .map(oc -> oc.getTitle()) // map() = OnlineClass 타입 스트림을 받아서 다른 타입(String)의 스트림으로 리턴함
+                        .map(oc -> oc.getTitle()) // map() = OnlineClass타입 스트림을 받아서 다른 타입(String)의 스트림으로 리턴함
                         .forEach(s -> System.out.println(s)); //여기선 forEach 에 String 스트림이 들어옴
 
         // 람다 메소드 레퍼런스로 자동 변경 가능.
@@ -100,12 +100,14 @@ public class App2 {
 
         //test=true
 
-        System.out.println("7.스프링 수업 중에 제목에 spring 이 들어간 것만 모아서 List 로 만들기");
+        System.out.println("7.스프링 수업 중에 제목에 spring 이 들어간 것만 모아서 제목만으로 List 로 만들기");
         //to do
-        List<OnlineClass> newList = springClasses.stream()
+        List<String> newList = springClasses.stream()
                 .filter(oc -> oc.getTitle().contains("spring"))
+                .map(OnlineClass::getTitle)
                 .collect(Collectors.toList());
-        newList.stream().forEach(oc -> System.out.println(oc.getTitle()));
+
+        newList.stream().forEach(System.out::println);
 
 //        spring boot
 //        spring data jpa
