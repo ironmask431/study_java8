@@ -9,10 +9,9 @@ import java.util.Optional;
 
 public class App {
     public static void main(String[] args) {
-        //머냐구찐짜
-        OnlineClass spring_boot = new OnlineClass(1,"spring boot", true);
-//        Progress progress = spring_boot.getProgress();
-//        System.out.println(progress.getStudyDuration()); // 이상태에선 .getProgress() 에서 npe 발생
+       OnlineClass spring_boot = new OnlineClass(1,"spring boot", true);
+//       Progress progress = spring_boot.getProgress();
+//       System.out.println(progress.getStudyDuration()); // 이상태에선 .getProgress() 에서 npe 발생
 
         //npe를 방지하기 위해 기존 에는 아래와 같이 if문으로 null 체크를 했다.
         //하지만 이런방식은 에러유발 위험이 큼. null체크를 빼먹을 수 있기때문에.
