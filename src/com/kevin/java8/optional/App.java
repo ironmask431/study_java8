@@ -11,6 +11,7 @@ public class App {
     public static void main(String[] args) {
         OnlineClass spring_boot = new OnlineClass(1,"spring boot", true);
 
+
 //        Progress progress = spring_boot.getProgress();
 //        System.out.println(progress.getStudyDuration()); // 이상태에선 .getProgress() 에서 npe 발생
 
