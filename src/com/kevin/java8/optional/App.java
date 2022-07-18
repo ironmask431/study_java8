@@ -31,16 +31,5 @@ public class App {
         //Optional 타입을 사용해 null 체크 없이 아래와 같이 사용가능
         Optional<Progress> progress = spring_boot.getProgress();
         progress.ifPresent(duration -> System.out.println(duration));
-
-
-
-
-
-
-
-
-
-
-
     }
 }
