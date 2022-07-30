@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * stream 예제 연습
+ * stream 예제 연습하기
  */
 public class App2 {
     public static void main(String[] args) {
@@ -113,9 +113,5 @@ public class App2 {
 //        spring data jpa
 //        spring mvc
 //        spring core
-
-
-
-
     }
 }
