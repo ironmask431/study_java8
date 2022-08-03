@@ -28,10 +28,10 @@ public class App {
 
         //1. hello 가 끝난다음 world 를 하려면?
         //thenCompose(): 두 작업이 서로 이어서 실행하도록 조합, 두 future 가 연관관계가 있어서 하나가 완료되고나서 나머지가 실행되야 할때
-//        CompletableFuture<String> future = hello.thenCompose((s) -> {
-//            return getWorld(s);
-//        });
-//        System.out.println(future.get());
+        CompletableFuture<String> future = hello.thenCompose((s) -> {
+            return getWorld(s);
+        });
+        System.out.println(future.get());
 
         //실행결과
 //        Hello ForkJoinPool.commonPool-worker-3
@@ -50,7 +50,6 @@ public class App {
 //        Hello,World
 
         //allOf(), anyOf() - 복잡해서 실습은 생략.. ㅎㅎ
-
     }
 
     public static CompletableFuture<String> getWorld(String msg){
