@@ -34,7 +34,7 @@ E. CompletableFuture
   5. CompletableFuture-2
 
 --- 
-E. 그 밖에
+. 그 밖에
   1. 애노테이션의 변화
   2. 배열 Parallel 정렬
   
