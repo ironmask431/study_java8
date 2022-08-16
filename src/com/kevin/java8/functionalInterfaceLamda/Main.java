@@ -43,6 +43,8 @@ public class Main {
          * Consumer<T>          = T타입 받아서 리턴X / void Accept(T);
          * Supplier<T>          = T타입 리턴만. / T get();
          * Predicate<T>         = T타입 받아서 BOOLEAN 리턴 / boolean test(T)
+         * UnaryOperator<T>     = Function<T, R>의 특수한 형태로, 입력값 하나를 받아서 동일한 타입을 리턴
+         * BinaryOperator<T>    = BiFunction<T, U, R>의 특수한 형태로, 동일한 타입의 입렵값 두개를 받아 리턴
          */
 
         //Function 함수형 인터페이스 예시 = T타입 받아서 R 리턴 / R apply(T);
