@@ -5,6 +5,24 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * 자바 8에서 추가한 기본 메소드로 인한 API 변화
+ * - Iterable의 기본 메소드
+ * forEach()
+ * spliterator()
+ *
+ * - Collection의 기본 메소드
+ * stream() / parallelStream()
+ * removeIf(Predicate)
+ * spliterator()
+ *
+ * - Comparator의 기본 메소드 및 스태틱 메소드
+ * reversed()
+ * thenComparing()
+ * static reverseOrder() / naturalOrder()
+ * static nullsFirst() / nullsLast()
+ * static comparing()
+ */
 public class App {
     public static void main(String[] args) {
 
