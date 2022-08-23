@@ -30,6 +30,7 @@ Optional<T>
 ```
 
  2. 함수형 인터페이스와 람다 표현식 소개 
+ https://github.com/ironmask431/study_java8/blob/master/src/com/kevin/java8/functionalInterfaceLamda/Main.java
  3. 자바에서 제공하는 함수형 인터페이스
  4. 람다 표현식
  5. 메소드 레퍼런스
