@@ -73,6 +73,7 @@ public class App2 {
 
         onlineClass = optional.orElseThrow(()-> new RuntimeException("없어"));
         //exception 발생시키고자 할때
+
     }
 
     private static OnlineClass createOnlineClass(){
