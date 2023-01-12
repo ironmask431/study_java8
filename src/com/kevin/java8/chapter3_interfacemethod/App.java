@@ -1,4 +1,4 @@
-package com.kevin.java8.interfacemethod;
+package com.kevin.java8.chapter3_interfacemethod;
 
 public class App {
     public static void main(String[] args) {

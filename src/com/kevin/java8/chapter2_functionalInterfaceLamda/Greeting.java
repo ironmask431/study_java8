@@ -1,9 +1,7 @@
-package com.kevin.java8.functionalInterfaceLamda;
-
-import javax.annotation.processing.Generated;
+package com.kevin.java8.chapter2_functionalInterfaceLamda;
 
 /**
- * 강의 2 - 함수형 인터페이스와 람다 = 4.메소드 레퍼런스
+ * 강의 2-4.메소드 레퍼런스
  */
 public class Greeting {
     private String name;
