@@ -1,4 +1,4 @@
-package com.kevin.java8.stream;
+package com.kevin.java8.chapter4_stream;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 /**
  * 8. Stream 소개
  * - Stream
- * sequence of elements supporting sequential and parallel aggregate operations
  * 데이터를 담고 있는 저장소 (컬렉션)이 아니다.
  * Funtional in nature, 스트림이 처리하는 데이터 소스를 변경하지 않는다.
  * 스트림으로 처리하는 데이터는 오직 한번만 처리한다.

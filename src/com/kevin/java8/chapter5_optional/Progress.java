@@ -1,4 +1,4 @@
-package com.kevin.java8.optional;
+package com.kevin.java8.chapter5_optional;
 
 import java.time.Duration;
 

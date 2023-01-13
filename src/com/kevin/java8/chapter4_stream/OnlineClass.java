@@ -1,6 +1,6 @@
-package com.kevin.java8.stream;
+package com.kevin.java8.chapter4_stream;
 
-import com.kevin.java8.optional.Progress;
+import com.kevin.java8.chapter5_optional.Progress;
 
 import java.util.Optional;
 

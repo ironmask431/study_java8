@@ -1,6 +1,4 @@
-package com.kevin.java8.CompletableFuture.Concurrent;
-
-
+package com.kevin.java8.chapter6_completableFuture.Concurrent;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {

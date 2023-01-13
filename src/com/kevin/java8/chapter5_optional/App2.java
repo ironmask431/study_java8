@@ -1,6 +1,6 @@
-package com.kevin.java8.optional;
+package com.kevin.java8.chapter5_optional;
 
-import com.kevin.java8.stream.OnlineClass;
+import com.kevin.java8.chapter4_stream.OnlineClass;
 
 import java.util.ArrayList;
 import java.util.List;

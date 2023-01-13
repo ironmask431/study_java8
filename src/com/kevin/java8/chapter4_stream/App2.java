@@ -1,4 +1,4 @@
-package com.kevin.java8.stream;
+package com.kevin.java8.chapter4_stream;
 
 import java.util.ArrayList;
 import java.util.Collection;
