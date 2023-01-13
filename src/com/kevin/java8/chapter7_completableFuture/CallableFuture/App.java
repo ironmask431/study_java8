@@ -1,4 +1,4 @@
-package com.kevin.java8.chapter6_completableFuture.CallableFuture;
+package com.kevin.java8.chapter7_completableFuture.CallableFuture;
 
 import java.util.Arrays;
 import java.util.List;

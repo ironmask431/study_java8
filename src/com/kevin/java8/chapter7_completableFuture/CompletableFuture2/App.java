@@ -1,4 +1,4 @@
-package com.kevin.java8.chapter6_completableFuture.CompletableFuture2;
+package com.kevin.java8.chapter7_completableFuture.CompletableFuture2;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

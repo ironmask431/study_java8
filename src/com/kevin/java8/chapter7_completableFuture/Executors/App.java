@@ -1,4 +1,4 @@
-package com.kevin.java8.chapter6_completableFuture.Executors;
+package com.kevin.java8.chapter7_completableFuture.Executors;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

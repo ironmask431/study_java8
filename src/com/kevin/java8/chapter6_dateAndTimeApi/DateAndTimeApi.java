@@ -1,4 +1,4 @@
-package com.kevin.java8.chapter7_dateAndTimeApi;
+package com.kevin.java8.chapter6_dateAndTimeApi;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
