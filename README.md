@@ -38,27 +38,37 @@ https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapt
  4. 메소드 레퍼런스
  
 --- 
-Chapter3. 인터페이스의 변화
+Chapter3. 인터페이스의 변화   
+https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapter3_interfacemethod
+
   1. 인터페이스 기본 메소드와 스태틱 메소드 
   2. 자바 8 API의 기본 메소드와 스태틱 메소드
   
 --- 
-Chapter4. Stream
+Chapter4. Stream   
+https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapter4_stream
+
   1. Stream 소개
   2. Stream API
   
 --- 
-Chapter5. Optional
+Chapter5. Optional   
+https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapter5_optional
+
   1. Optional 소개
   2. Optional API
   
 --- 
-Chapter6. Date와 Time
+Chapter6. Date와 Time   
+https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapter6_dateAndTimeApi
+
   1. Date와 Time 소개
   2. Date와 Time API
     
 --- 
-Chapter7. CompletableFuture
+Chapter7. CompletableFuture    
+https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapter7_completableFuture
+
   1. 자바 Concurrent 프로그래밍 소개
   2. Executors
   3. Callable 과 Future
@@ -66,7 +76,9 @@ Chapter7. CompletableFuture
   5. CompletableFuture-2
 
 --- 
-Chapter8. 그 밖에
+Chapter8. 그 밖에   
+https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapter8_arrayParallelSort
+
   1. 애노테이션의 변화
   2. 배열 Parallel 정렬
   3. Metaspace
