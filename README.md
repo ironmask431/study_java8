@@ -3,7 +3,7 @@
 목적 : java8 study
 
 ---
-A. 소개
+Chapter1. 소개
  1. JAVA8 소개 
 
 ```자바 8
@@ -29,29 +29,36 @@ LTS 지원 기간은 5년이상으로 JDK를 제공하는 밴더와 이용하는
 Optional<T>   
 ```
 
- 2. 함수형 인터페이스와 람다 표현식 소개 
- https://github.com/ironmask431/study_java8/blob/master/src/com/kevin/java8/functionalInterfaceLamda/Main.java
- 3. 자바에서 제공하는 함수형 인터페이스
- 4. 람다 표현식
- 5. 메소드 레퍼런스
+Chapter2. 함수형 인터페이스와 람다
+https://github.com/ironmask431/study_java8/tree/master/src/com/kevin/java8/chapter2_functionalInterfaceLamda
+ 
+ 1. 함수형 인터페이스와 람다 표현식 소개 
+ 2. 자바에서 제공하는 함수형 인터페이스
+ 3. 람다 표현식
+ 4. 메소드 레퍼런스
  
 --- 
-B.인터페이스의 변화
+Chapter3. 인터페이스의 변화
   1. 인터페이스 기본 메소드와 스태틱 메소드 
   2. 자바 8 API의 기본 메소드와 스태틱 메소드
   
 --- 
-C. Stream
+Chapter4. Stream
   1. Stream 소개
   2. Stream API
   
 --- 
-D. Optional
+Chapter5. Optional
   1. Optional 소개
   2. Optional API
   
 --- 
-E. CompletableFuture
+Chapter6. Date와 Time
+  1. Date와 Time 소개
+  2. Date와 Time API
+    
+--- 
+Chapter7. CompletableFuture
   1. 자바 Concurrent 프로그래밍 소개
   2. Executors
   3. Callable 과 Future
@@ -59,13 +66,13 @@ E. CompletableFuture
   5. CompletableFuture-2
 
 --- 
-F. 그 밖에
+Chapter8. 그 밖에
   1. 애노테이션의 변화
   2. 배열 Parallel 정렬
   3. Metaspace
   
 --- 
-G. 마무리
+마무리
   1. 요약 
   
 
