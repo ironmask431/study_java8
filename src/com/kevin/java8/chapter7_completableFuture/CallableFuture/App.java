@@ -4,9 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
 
-
-
-
 /**
  * 16. Callable과 Future
  * Callable

@@ -23,7 +23,6 @@ Fork/Join 프레임워크를 사용해서 배열을 병렬로 정렬하는 기�
         int size = 1500;
         int[] numbers = new int[size];
         Random random = new Random();
-
         //numbers 배열에 랜덤한 숫자를 채움.
         IntStream.range(0, size).forEach(i -> numbers[i] = random.nextInt());
         long start = System.nanoTime();
@@ -33,7 +32,8 @@ Fork/Join 프레임워크를 사용해서 배열을 병렬로 정렬하는 기�
         IntStream.range(0, size).forEach(i -> numbers[i] = random.nextInt());
         start = System.nanoTime();
         Arrays.parallelSort(numbers);// 패러랠 정렬
-        System.out.println("serial sorting took-"+(System.nanoTime() - start));
+        System.out.println("serial sorting took-"+(System.nanoTime() -
+ start));
 
         //실행결과
 //        serial sorting took-1055600

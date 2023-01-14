@@ -57,7 +57,7 @@ public class App2 {
                 .findFirst();
 
         boolean present = optional.isPresent();
-        System.out.println(present); //true
+        System.out.println(present); //true or false
 
         optional.ifPresent(oc -> System.out.println(oc.getTitle()));
 
