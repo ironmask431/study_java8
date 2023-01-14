@@ -15,11 +15,11 @@ import java.util.stream.Collectors;
  * 손쉽게 병렬 처리할 수 있다.
  *
  * - 스트림 파이프라인
- * 0 또는 다수의 중개 오퍼레이션 (intermediate operation)과 한개의 종료 오퍼레이션
+ * 0 또는 다수의 중개 오퍼레이션과 한개의 종료 오퍼레이션
  * (terminal operation)으로 구성한다.
  * 스트림의 데이터 소스는 오직 터미널 오퍼네이션을 실행할 때에만 처리한다.
  *
- * - 중개 오퍼레이션
+ * - 중개 오퍼레이션 (intermediate operation)
  * Stream을 리턴한다.
  * Stateless / Stateful 오퍼레이션으로 더 상세하게 구분할 수도 있다. (대부분은
  * Stateless지만 distinct나 sorted 처럼 이전 이전 소스 데이터를 참조해야 하는

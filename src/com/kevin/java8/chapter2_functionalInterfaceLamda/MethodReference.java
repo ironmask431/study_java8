@@ -24,18 +24,18 @@ public class MethodReference {
         //UnaryOperator = Function 함수형 인터페이스중 입력,리턴이 같은 타입일때 하나의 타입만 명시해서 사용가능
         UnaryOperator<String> hi1 = (s) -> "hi "+s;
         //위 함수인터페이스는 Greeting.hi() 와 같은 기능
-        System.out.println(hi1.apply("test"));
+        System.out.println(hi1.apply("test")); //hi test
 
         //아래와 같이 변경 가능  :: 는 메소드레퍼런스를 뜻함. 함수형인터페이스의 구현체로
         //특정 클래스의 메소드를 사용하고자 할때 "클래스명(인스턴스명)::메소드명" 이렇게 사용할 수 있다.
         //스태틱 메소드를 사용
         UnaryOperator<String> hi2 = Greeting::hi;
-        System.out.println(hi2.apply("test"));
+        System.out.println(hi2.apply("test")); //hi test
 
         //구현체로 인스턴스 메소드를 사용하고자 할때는
         Greeting greeting = new Greeting();
         UnaryOperator<String> hello = greeting::hello;
-        System.out.println(hello.apply("test"));
+        System.out.println(hello.apply("test")); //hello test
 
         /**
          * 구현체로  Greeting::new 를 똑같이 썻지만, 함수형인터페이스가 각각
@@ -43,11 +43,11 @@ public class MethodReference {
          */
         //구현체로 클래스의 생성자를 사용할때는
         Supplier<Greeting> newGreeting = Greeting::new;
-        System.out.println("getName()="+newGreeting.get().getName());
+        System.out.println("getName()="+newGreeting.get().getName()); //getName()=null
 
         //구현체로 클래스의 생성자2를 사용할때는
         Function<String, Greeting> newGreeting2 = Greeting::new;
-        System.out.println("getName()="+newGreeting2.apply("test").getName());
+        System.out.println("getName()="+newGreeting2.apply("test").getName()); //getName()=test
 
 
         //임의 객체의 인스턴스 메소드 참조 예시
@@ -68,6 +68,7 @@ public class MethodReference {
         Arrays.sort(names, String::compareToIgnoreCase);
 
         System.out.println(Arrays.toString(names));
+        //[chakyung, chawon, jinsol, naeun, rachel, yena]
 
     }
 }

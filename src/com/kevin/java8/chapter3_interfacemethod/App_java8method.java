@@ -34,7 +34,7 @@ public class App_java8method {
         name.add("rachel");
         name.add("chawon");
 
-        //Iterable 의 기본메소드 : forEach();
+        //Iterable 의 기본메소드 : forEach(); - consumer
         //forEach 는 매개변수로 Consumer 함수형 인터페이스가 들어감.
         name.forEach(new Consumer<String>() {
            @Override
@@ -62,7 +62,7 @@ public class App_java8method {
 
         //Collection 의 기본메소드 stream() : 다음장에 제대로 다울 예정
 
-        //removeIf() : 특정요소 제거
+        //removeIf() : 특정요소 제거 매개변수 predicate
         name.removeIf(s -> s.startsWith("c")); //c로 시작하는 요소 제거
         name.forEach(s -> System.out.println(s));
         //실행결과
@@ -92,6 +92,16 @@ public class App_java8method {
         //rachel
         //naeun
         //yena
+
+        //위 코드를 람다식으로 변경 하면
+        name.sort((o1, o2) -> {
+            if(o1.length() > o2.length()){
+                return -1;
+            }else if(o1.length() < o2.length()){
+                return 1;
+            }
+            return 0;
+        });
 
     }
 }

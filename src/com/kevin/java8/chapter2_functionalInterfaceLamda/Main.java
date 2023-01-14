@@ -26,39 +26,6 @@ public class Main {
     public static void main(String[] args) {
 
         /**
-         * 강의 2-2. java8 에서 제공하는 주요 함수형 인터페이스
-         *
-         * Function<T,R>        = T타입 받아서 R 리턴 / R apply(T);
-         * BiFunction<T,U,R>    = 두개의 값 T,U 받아서 R 리턴 / R apply(T,U);
-         * Consumer<T>          = T타입 받아서 리턴X / void Accept(T);
-         * Supplier<T>          = T타입 리턴만. / T get();
-         * Predicate<T>         = T타입 받아서 BOOLEAN 리턴 / boolean test(T)
-         * UnaryOperator<T>     = Function<T, R>의 특수한 형태로, 입력값 하나를 받아서 동일한 타입을 리턴
-         * BinaryOperator<T>    = BiFunction<T, U, R>의 특수한 형태로, 동일한 타입의 입렵값 두개를 받아 리턴
-         */
-
-        //Function 함수형 인터페이스 예시 = T타입 받아서 R 리턴 / R apply(T);
-        Function<Integer, Integer> plus10 = (i) -> i+10;
-        System.out.println(plus10.apply(1)); //11
-
-        //BiFunction 함수형 인터페이스 예시 = 두개의 값 T,U 받아서 R 리턴 / R apply(T,U);
-        BiFunction<Integer, Integer, Integer> test = (i,j) -> i+j;
-        System.out.println(test.apply(1,2)); // 3
-
-        //Consumer 함수형 인터페이스 예시 = T타입 받아서 리턴X / void Accept(T);
-        Consumer<Integer> printT = (i) -> System.out.println(i);
-        printT.accept(1); //1
-
-        //Supplier 함수형 인터페이스 예시 = T타입 리턴만. / T get();
-        Supplier<Integer> get10 = () -> 10;
-        System.out.println(get10.get()); //10
-
-        //Predicate 함수형 인터페이스 예시 = T타입 받아서 BOOLEAN 리턴 / boolean test(T)
-        Predicate<Integer> isEven = (i) -> i%2 == 0;
-        System.out.println(isEven.test(4)); //true
-
-
-        /**
          * 강의 2-3.람다 표현식
          * 람다
          *  ● (인자 리스트) -> {바디}
@@ -69,7 +36,7 @@ public class Main {
              * ● 인자의 타입은 생략 가능, 컴파일러가 추론(infer)하지만 명시할 수도 있다. (Integer one, Integer two)
          * 바디
              * ● 화상표 오른쪽에 함수 본문을 정의한다.
-             * ● 여러줄인경우에{}를사용해서묶는다.
+             * ● 여러 줄 인경우에{}를사용해서묶는다.
              * ● 한 줄인 경우에 생략 가능, return도 생략 가능.
          */
         // 익명 내부 클래스(함수형 인터페이스) 원형
@@ -88,6 +55,37 @@ public class Main {
         };
         runSomething2.doIt();
 
+        /**
+         * 강의 2-2. java8 에서 제공하는 주요 함수형 인터페이스
+         *
+         * Function<T,R>        = T타입 받아서 R 리턴 / R apply(T);
+         * UnaryOperator<T>     = Function<T, R>의 특수한 형태로, 입력값 하나를 받아서 동일한 타입을 리턴
+         * BiFunction<T,U,R>    = 두개의 값 T,U 받아서 R 리턴 / R apply(T,U);
+         * BinaryOperator<T>    = BiFunction<T, U, R>의 특수한 형태로, 동일한 타입의 입력값 두개를 받아 리턴
+         * Consumer<T>          = T타입 받아서 리턴X / void Accept(T);
+         * Supplier<T>          = T타입 리턴만. / T get();
+         * Predicate<T>         = T타입 받아서 BOOLEAN 리턴 / boolean test(T)
+         */
+
+        //Function 함수형 인터페이스 예시 = T타입 받아서 R 리턴 / R apply(T);
+        Function<Integer, Integer> plus10 = (i) -> i+10;
+        System.out.println(plus10.apply(1)); // 11
+
+        //BiFunction 함수형 인터페이스 예시 = 두개의 값 T,U 받아서 R 리턴 / R apply(T,U);
+        BiFunction<Integer, Integer, Integer> test = (i,j) -> i+j;
+        System.out.println(test.apply(1,2)); // 3
+
+        //Consumer 함수형 인터페이스 예시 = T타입 받아서 리턴X / void Accept(T);
+        Consumer<Integer> printT = (i) -> System.out.println(i);
+        printT.accept(1); //1
+
+        //Supplier 함수형 인터페이스 예시 = T타입 리턴만. / T get();
+        Supplier<Integer> get10 = () -> 10;
+        System.out.println(get10.get()); //10
+
+        //Predicate 함수형 인터페이스 예시 = T타입 받아서 BOOLEAN 리턴 / boolean test(T)
+        Predicate<Integer> isEven = (i) -> i%2 == 0;
+        System.out.println(isEven.test(4)); //true
 
     }
 
